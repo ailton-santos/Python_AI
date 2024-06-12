@@ -1,0 +1,61 @@
+tweet,sentimento
+perfeito perfeito,2
+odeio péssimo,0
+legal razoável,1
+maravilhoso lindo,2
+odeio nao recomendo,0
+interessante razoável,1
+adoro maravilhoso,2
+ruim horrível,0
+bom razoável,1
+perfeito lindo,2
+odeio decepcionante,0
+mediano mediano,1
+lindo lindo,2
+nao recomendo horrível,0
+okay okay,1
+perfeito recomendo,2
+péssimo decepcionante,0
+mediano interessante,1
+perfeito maravilhoso,2
+péssimo horrível,0
+legal mediano,1
+perfeito perfeito,2
+nao recomendo horrível,0
+informativo mediano,1
+recomendo adoro,2
+nao recomendo péssimo,0
+okay razoável,1
+maravilhoso recomendo,2
+nao recomendo nao recomendo,0
+razoável okay,1
+recomendo adoro,2
+decepcionante odeio,0
+legal interessante,1
+perfeito perfeito,2
+odeio nao recomendo,0
+okay mediano,1
+maravilhoso lindo,2
+horrível nao recomendo,0
+okay mediano,1
+perfeito recomendo,2
+horrível horrível,0
+legal bom,1
+perfeito perfeito,2
+ruim nao recomendo,0
+bom mediano,1
+lindo adoro,2
+nao recomendo péssimo,0
+razoável okay,1
+lindo lindo,2
+ruim odeio,0
+informativo interessante,1
+lindo recomendo,2
+péssimo ruim,0
+mediano informativo,1
+lindo adoro,2
+horrível horrível,0
+razoável razoável,1
+recomendo lindo,2
+decepcionante odeio,0
+bom bom,1
