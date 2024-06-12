@@ -1,0 +1,301 @@
+tweet,sentimento
+maravilhoso adoro,2
+informativo bom,1
+decepcionante decepcionante,0
+maravilhoso recomendo,2
+legal ok,1
+não recomendo ruim,0
+adoro perfeito,2
+informativo interessante,1
+péssimo péssimo,0
+perfeito incrível,2
+ok bom,1
+ruim péssimo,0
+adoro maravilhoso,2
+informativo bom,1
+decepcionante horrível,0
+maravilhoso maravilhoso,2
+bom ok,1
+ruim horrível,0
+adoro adoro,2
+bom legal,1
+ruim horrível,0
+maravilhoso perfeito,2
+ok informativo,1
+não recomendo decepcionante,0
+incrível maravilhoso,2
+ok bom,1
+não recomendo horrível,0
+perfeito recomendo,2
+ok ok,1
+péssimo decepcionante,0
+adoro maravilhoso,2
+interessante interessante,1
+péssimo decepcionante,0
+perfeito incrível,2
+informativo ok,1
+não recomendo péssimo,0
+adoro perfeito,2
+bom interessante,1
+horrível horrível,0
+perfeito incrível,2
+legal informativo,1
+ruim horrível,0
+maravilhoso recomendo,2
+legal ok,1
+decepcionante não recomendo,0
+incrível maravilhoso,2
+interessante ok,1
+horrível péssimo,0
+perfeito incrível,2
+legal interessante,1
+péssimo horrível,0
+adoro recomendo,2
+ok ok,1
+horrível ruim,0
+recomendo incrível,2
+interessante informativo,1
+péssimo horrível,0
+perfeito recomendo,2
+legal informativo,1
+decepcionante horrível,0
+perfeito recomendo,2
+bom informativo,1
+decepcionante decepcionante,0
+incrível maravilhoso,2
+interessante bom,1
+ruim decepcionante,0
+maravilhoso adoro,2
+interessante informativo,1
+não recomendo horrível,0
+adoro maravilhoso,2
+interessante informativo,1
+horrível horrível,0
+perfeito recomendo,2
+bom ok,1
+decepcionante decepcionante,0
+recomendo incrível,2
+interessante bom,1
+péssimo péssimo,0
+adoro adoro,2
+ok ok,1
+ruim péssimo,0
+recomendo maravilhoso,2
+ok legal,1
+horrível péssimo,0
+adoro recomendo,2
+legal interessante,1
+péssimo decepcionante,0
+recomendo perfeito,2
+bom ok,1
+péssimo ruim,0
+perfeito incrível,2
+legal interessante,1
+decepcionante horrível,0
+maravilhoso recomendo,2
+interessante legal,1
+decepcionante péssimo,0
+maravilhoso incrível,2
+interessante bom,1
+horrível péssimo,0
+maravilhoso adoro,2
+informativo interessante,1
+péssimo não recomendo,0
+perfeito perfeito,2
+informativo informativo,1
+ruim ruim,0
+incrível perfeito,2
+informativo bom,1
+decepcionante péssimo,0
+maravilhoso perfeito,2
+legal legal,1
+péssimo não recomendo,0
+incrível perfeito,2
+ok interessante,1
+ruim decepcionante,0
+adoro maravilhoso,2
+interessante ok,1
+horrível ruim,0
+perfeito incrível,2
+interessante informativo,1
+ruim não recomendo,0
+incrível incrível,2
+interessante informativo,1
+decepcionante ruim,0
+maravilhoso adoro,2
+ok informativo,1
+não recomendo não recomendo,0
+recomendo adoro,2
+ok ok,1
+horrível ruim,0
+perfeito perfeito,2
+ok informativo,1
+péssimo péssimo,0
+perfeito incrível,2
+ok informativo,1
+ruim ruim,0
+adoro recomendo,2
+informativo ok,1
+horrível ruim,0
+recomendo incrível,2
+ok interessante,1
+decepcionante péssimo,0
+maravilhoso maravilhoso,2
+informativo bom,1
+decepcionante péssimo,0
+perfeito maravilhoso,2
+bom ok,1
+ruim decepcionante,0
+incrível incrível,2
+ok bom,1
+péssimo não recomendo,0
+incrível perfeito,2
+interessante ok,1
+ruim péssimo,0
+adoro recomendo,2
+ok ok,1
+decepcionante não recomendo,0
+incrível incrível,2
+interessante informativo,1
+péssimo ruim,0
+adoro perfeito,2
+legal legal,1
+péssimo ruim,0
+recomendo incrível,2
+interessante ok,1
+péssimo horrível,0
+perfeito perfeito,2
+informativo ok,1
+péssimo péssimo,0
+adoro perfeito,2
+interessante interessante,1
+decepcionante péssimo,0
+maravilhoso recomendo,2
+informativo bom,1
+não recomendo péssimo,0
+maravilhoso maravilhoso,2
+bom bom,1
+não recomendo ruim,0
+recomendo recomendo,2
+informativo informativo,1
+não recomendo horrível,0
+incrível incrível,2
+legal ok,1
+horrível horrível,0
+maravilhoso perfeito,2
+ok legal,1
+não recomendo ruim,0
+recomendo incrível,2
+legal legal,1
+não recomendo horrível,0
+maravilhoso perfeito,2
+informativo bom,1
+ruim ruim,0
+incrível maravilhoso,2
+ok ok,1
+ruim decepcionante,0
+adoro incrível,2
+informativo interessante,1
+ruim ruim,0
+perfeito perfeito,2
+bom legal,1
+péssimo não recomendo,0
+perfeito perfeito,2
+bom bom,1
+não recomendo ruim,0
+recomendo perfeito,2
+ok informativo,1
+péssimo horrível,0
+recomendo maravilhoso,2
+informativo ok,1
+decepcionante péssimo,0
+adoro perfeito,2
+ok ok,1
+ruim não recomendo,0
+recomendo adoro,2
+interessante ok,1
+decepcionante horrível,0
+recomendo adoro,2
+ok informativo,1
+decepcionante péssimo,0
+maravilhoso perfeito,2
+bom legal,1
+não recomendo horrível,0
+adoro maravilhoso,2
+informativo legal,1
+ruim ruim,0
+incrível recomendo,2
+ok informativo,1
+péssimo horrível,0
+maravilhoso incrível,2
+bom bom,1
+horrível horrível,0
+adoro incrível,2
+bom interessante,1
+não recomendo ruim,0
+maravilhoso maravilhoso,2
+bom bom,1
+não recomendo horrível,0
+adoro incrível,2
+ok bom,1
+decepcionante péssimo,0
+incrível incrível,2
+interessante informativo,1
+horrível decepcionante,0
+recomendo maravilhoso,2
+informativo bom,1
+decepcionante horrível,0
+maravilhoso maravilhoso,2
+informativo ok,1
+não recomendo não recomendo,0
+incrível adoro,2
+legal ok,1
+péssimo não recomendo,0
+perfeito adoro,2
+interessante interessante,1
+péssimo péssimo,0
+maravilhoso maravilhoso,2
+legal interessante,1
+péssimo decepcionante,0
+adoro incrível,2
+ok interessante,1
+horrível decepcionante,0
+incrível recomendo,2
+informativo interessante,1
+não recomendo ruim,0
+adoro recomendo,2
+ok ok,1
+péssimo péssimo,0
+perfeito incrível,2
+legal interessante,1
+ruim decepcionante,0
+incrível recomendo,2
+bom informativo,1
+horrível não recomendo,0
+maravilhoso incrível,2
+informativo bom,1
+não recomendo decepcionante,0
+adoro perfeito,2
+legal interessante,1
+péssimo horrível,0
+adoro incrível,2
+legal legal,1
+decepcionante não recomendo,0
+perfeito perfeito,2
+informativo informativo,1
+horrível decepcionante,0
+perfeito adoro,2
+legal legal,1
+decepcionante não recomendo,0
+perfeito maravilhoso,2
+bom legal,1
+decepcionante horrível,0
+recomendo perfeito,2
+informativo interessante,1
+horrível ruim,0
+perfeito incrível,2
+ok legal,1
+decepcionante decepcionante,0
+adoro incrível,2
+ok interessante,1
+horrível péssimo,0
