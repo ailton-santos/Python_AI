@@ -10,4 +10,4 @@ Develop programs for
 - Artificial neural networks
 - Natural language processing
 - Computer vision
-Creating customized models 
+- Creating customized models 
