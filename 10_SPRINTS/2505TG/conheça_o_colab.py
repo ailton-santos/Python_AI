@@ -7,20 +7,65 @@ Original file is located at
     https://colab.research.google.com/notebooks/intro.ipynb
 """
 
-def argumento (numero):
-  if numero > 0:
-    return 'P'
-  else:
-    return 'N'
-teclado = input ("Digite um nuúmero")
-valor = float (teclado  )
-resultado = argumento(valor)
-print(f"O resultado é {resultado}")
+import tensorflow as tf
 
-def somaImposto (taxaImposto, custo):
-    custo_final = custo + (custo*(taxaImposto / 100))
-    return custo_final
-taxa = float (input("Digite a taxa de imposto:"))
-preco = float (input("Digite o custo do item:"))
-valor_com_imposto = somaImposto (taxa, preco)
-print (f"O valor final com {taxa}% de imposto é:R$ {valor_com_imposto:}")
+# 1. Carregando os dados
+mnist = tf.keras.datasets.mnist
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+
+# Normalização (transforma pixels de 0-255 para 0-1)
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+# 2. Construindo a Arquitetura
+
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),    # Transforma a matriz 28x28 em um vetor de 784
+    tf.keras.layers.Dense(160, activation='relu'),   # Camada oculta com 160 neurônios
+    tf.keras.layers.Dropout(0.2),                    # Desliga 20% dos neurônios (mais equilibrado)
+    tf.keras.layers.Dense(10, activation='softmax')  # 10 neurônios para as 10 classes (0 a 9)
+])
+
+# 3. Compilação
+model.compile(
+    optimizer='adam',
+    loss='sparse_categorical_crossentropy',
+    metrics=['accuracy']
+)
+
+# 4. Treinamento
+model.fit(x_train, y_train, epochs=5)
+
+# 5. Avaliação Final
+print("\n--- Avaliação com dados que a IA nunca viu ---")
+model.evaluate(x_test, y_test)
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# faz as previsões do modelo em todas as imagens de teste
+predictions = model.predict(x_test)
+
+# pega a classe prevista (o índice com maior valor)
+predicted_labels = np.argmax(predictions, axis=1)
+
+# encontra onde o modelo errou
+errors = predicted_labels != y_test
+
+# separa as imagens erradas, os rótulos corretos e os previstos
+x_errors = x_test[errors]
+y_errors = y_test[errors]
+pred_errors = predicted_labels[errors]
+
+# mostra quantos erros aconteceram
+print("Quantidade de erros:", len(x_errors))
+
+plt.figure(figsize=(12, 8))
+
+for i in range(9):  # mostra 9 erros
+    plt.subplot(3, 3, i + 1)
+    plt.imshow(x_errors[i], cmap='gray')
+    plt.title(f"Correto: {y_errors[i]} | Previsto: {pred_errors[i]}")
+    plt.axis('off')
+
+plt.tight_layout()
+plt.show()
