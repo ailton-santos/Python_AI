@@ -50,7 +50,7 @@ model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)
 
 """##Teste 1
-Foi realizado um teste com uma rede neural simples para classificação de dígitos do dataset MNIST. O modelo utilizou imagens 28x28 normalizadas, uma camada oculta com 128 neurônios, Dropout de 0.2 e saída com 10 classes. O treinamento foi feito por 5 épocas com otimizador Adam e função de perda sparse categorical crossentropy. Como resultado, a IA alcançou **97,5% de acerto** negrito no conjunto de teste, apresentando bom desempenho na tarefa de reconhecimento de números escritos à mão.
+Foi realizado um teste com uma rede neural simples para classificação de dígitos do dataset MNIST. O modelo utilizou imagens 28x28 normalizadas, uma camada oculta com 128 neurônios, Dropout de 0.2 e saída com 10 classes. O treinamento foi feito por 5 épocas com otimizador Adam e função de perda sparse categorical crossentropy. Como resultado, a IA alcançou **97,5% de acerto** no conjunto de teste, apresentando bom desempenho na tarefa de reconhecimento de números escritos à mão.
 """
 
 import tensorflow as tf
@@ -125,3 +125,9 @@ for i in range(9):  # mostra 9 erros
 
 plt.tight_layout()
 plt.show()
+
+"""## Teste 2
+Dando continuidade ao teste anterior, foi utilizado o mesmo modelo e parâmetros de treinamento aplicados ao dataset MNIST. O modelo manteve evolução consistente, atingindo cerca de **97,7% de acurácia** ao final do treinamento.
+Na avaliação com dados de teste, obteve aproximadamente **97,8% de acerto** e loss de **0,0726**, confirmando seu bom desempenho. Como complemento, foi realizada a análise de erros, identificando **217 classificações incorretas** em 10.000 imagen
+Esses erros ocorrem, principalmente, em imagens ambíguas ou de difícil interpretação, permitindo uma análise mais aprofundada das limitações do modelo.
+"""
