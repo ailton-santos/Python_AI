@@ -7,65 +7,58 @@ Original file is located at
     https://colab.research.google.com/notebooks/intro.ipynb
 """
 
-import tensorflow as tf
+# Importa as bibliotecas necessárias
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
 
-# 1. Carregando os dados
-mnist = tf.keras.datasets.mnist
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
+# Carrega o dataset Iris (dados de flores)
+iris = load_iris()
 
-# Normalização (transforma pixels de 0-255 para 0-1)
-x_train, x_test = x_train / 255.0, x_test / 255.0
+# X = características das flores (tamanho de pétalas e sépalas)
+# y = rótulos (tipo da flor: 0, 1 ou 2)
+X = iris.data
+y = iris.target
 
-# 2. Construindo a Arquitetura
-
-model = tf.keras.models.Sequential([
-    tf.keras.layers.Flatten(input_shape=(28, 28)),    # Transforma a matriz 28x28 em um vetor de 784
-    tf.keras.layers.Dense(160, activation='relu'),   # Camada oculta com 160 neurônios
-    tf.keras.layers.Dropout(0.2),                    # Desliga 20% dos neurônios (mais equilibrado)
-    tf.keras.layers.Dense(10, activation='softmax')  # 10 neurônios para as 10 classes (0 a 9)
-])
-
-# 3. Compilação
-model.compile(
-    optimizer='adam',
-    loss='sparse_categorical_crossentropy',
-    metrics=['accuracy']
+#  Divide os dados em treino (80%) e teste (20%)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
 )
 
-# 4. Treinamento
-model.fit(x_train, y_train, epochs=5)
+#  Cria o modelo KNN com 3 vizinhos
+modelo = KNeighborsClassifier(n_neighbors=3)
 
-# 5. Avaliação Final
-print("\n--- Avaliação com dados que a IA nunca viu ---")
-model.evaluate(x_test, y_test)
+#  Treina o modelo com os dados de treino
+modelo.fit(X_train, y_train)
 
-import numpy as np
-import matplotlib.pyplot as plt
+#  Faz previsões usando os dados de teste
+previsoes = modelo.predict(X_test)
 
-# faz as previsões do modelo em todas as imagens de teste
-predictions = model.predict(x_test)
+#  Calcula a acurácia (quantos acertos o modelo teve)
+acuracia = accuracy_score(y_test, previsoes)
 
-# pega a classe prevista (o índice com maior valor)
-predicted_labels = np.argmax(predictions, axis=1)
+#  Mostra o resultado final em porcentagem
+print(f"A precisão do modelo foi de: {acuracia * 100:.2f}%")
 
-# encontra onde o modelo errou
-errors = predicted_labels != y_test
+import pandas as pd
+from sklearn.linear_model import LinearRegression
 
-# separa as imagens erradas, os rótulos corretos e os previstos
-x_errors = x_test[errors]
-y_errors = y_test[errors]
-pred_errors = predicted_labels[errors]
 
-# mostra quantos erros aconteceram
-print("Quantidade de erros:", len(x_errors))
+df = pd.read_csv('dados_imobiliaria.csv')
 
-plt.figure(figsize=(12, 8))
 
-for i in range(9):  # mostra 9 erros
-    plt.subplot(3, 3, i + 1)
-    plt.imshow(x_errors[i], cmap='gray')
-    plt.title(f"Correto: {y_errors[i]} | Previsto: {pred_errors[i]}")
-    plt.axis('off')
+X = df[['tamanho_m2']]
+y = df['preco_reais']
 
-plt.tight_layout()
-plt.show()
+
+modelo = LinearRegression()
+modelo.fit(X, y)
+
+
+tamanhos_novos = [[110], [150]]
+precos_previstos = modelo.predict(tamanhos_novos)
+
+
+print(f"Valor para 110m²:R$ {precos_previstos[0]:,.2f}")
+print(f"Preço para 150m²:R$ {precos_previstos[1]:,.2f}")
