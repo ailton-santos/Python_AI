@@ -30,7 +30,7 @@ modelo.fit(X, y)
 print("Modelo treinado com sucesso!")
 
 
-TOKEN = "8667788897:AAGpWjZSGR1nz6qkkyHiBg-PvoZvAjQu2sc"  # coloque seu token do Telegram aqui
+TOKEN = "8667788897:AAGpWjZSGR1nz6qkkyHiBg-PvoZvAjQu2sc"  
 bot = telebot.TeleBot(TOKEN)
 
 
